@@ -1,0 +1,11 @@
+SELECT
+	e.FirstName || ' ' || e.LastName EmployeeName,
+	o.OrderId OrderID,
+	od.UnitPrice * od.Quantity Amount,
+	od.UnitPrice UnitPrice,
+	od.Quantity Quantity
+FROM Employees e
+JOIN Orders o
+ON e.EmployeeID = o.EmployeeID
+JOIN OrderDetails od
+ON o.OrderId = od.OrderId
