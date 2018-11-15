@@ -1,5 +1,5 @@
-# Palestra-Seaborn
-Códigos usados para gerar os gráficos apresentados na palestra
+# Exemplos-de-Uso-Seaborn
+Códigos usados para gerar os gráficos apresentados na palestra e no artigo do LinkedIn.
 
 Um roteiro com a explicação detalhada pode ser encontrado no meu perfil do LinkedIn, através do link: 
 
