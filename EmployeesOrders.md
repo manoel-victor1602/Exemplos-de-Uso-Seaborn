@@ -7,9 +7,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 ```
 
-    Populating the interactive namespace from numpy and matplotlib
-    
-
 
 ```python
 df = pd.read_csv('EmployeesOrders.csv')
@@ -22,21 +19,6 @@ df.head()
 
 
 
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -121,10 +103,6 @@ ax.set(xlabel='Nome do Funcionário', ylabel='Valores de Pedidos')
 
 
 
-    [Text(0,0.5,'Valores de Pedidos'), Text(0.5,0,'Nome do Funcionário')]
-
-
-
 
 ![png](output_6_1.png)
 
@@ -142,20 +120,6 @@ grouped
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -215,11 +179,6 @@ ax.set(xlabel='Nome do Funcionário', ylabel='Montante Total ($)')
 
 
 
-    [Text(0,0.5,'Montante Total ($)'), Text(0.5,0,'Nome do Funcionário')]
-
-
-
-
 ![png](output_10_1.png)
 
 
@@ -238,5 +197,5 @@ ax.set(xlabel='Preço Unitário', ylabel='Valor do Pedido')
 
 
 
-![png](output_11_1.png)
+![png](output_15_1.png)
 
