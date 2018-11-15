@@ -348,15 +348,6 @@ g.map_upper(plt.scatter)
 g.map_diag(sns.kdeplot, lw=3)
 ```
 
-    C:\Users\Inventario-LSE\Anaconda3\lib\site-packages\scipy\stats\stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
-    
-
-
-
-
-    <seaborn.axisgrid.PairGrid at 0x17fe81ea9e8>
-
 
 
 
