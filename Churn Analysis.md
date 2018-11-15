@@ -7,8 +7,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
-
-    Populating the interactive namespace from numpy and matplotlib
     
 
 
@@ -24,20 +22,6 @@ df.head()
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -161,22 +145,6 @@ df.head()
 ```
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -380,15 +348,6 @@ g.map_upper(plt.scatter)
 g.map_diag(sns.kdeplot, lw=3)
 ```
 
-    C:\Users\Inventario-LSE\Anaconda3\lib\site-packages\scipy\stats\stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
-      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
-    
-
-
-
-
-    <seaborn.axisgrid.PairGrid at 0x17fe81ea9e8>
-
 
 
 
@@ -405,67 +364,6 @@ data = pd.melt(data,id_vars="Exited",
 
 sns.swarmplot(x="Features", y="Value", hue="Exited", data=data)
 ```
-
-
-    ---------------------------------------------------------------------------
-
-    KeyboardInterrupt                         Traceback (most recent call last)
-
-    <ipython-input-35-6870867e9d29> in <module>()
-          5                     value_name='Value')
-          6 
-    ----> 7 sns.swarmplot(x="Features", y="Value", hue="Exited", data=data)
-    
-
-    ~\Anaconda3\lib\site-packages\seaborn\categorical.py in swarmplot(x, y, hue, data, order, hue_order, dodge, orient, color, palette, size, edgecolor, linewidth, ax, **kwargs)
-       2989                        linewidth=linewidth))
-       2990 
-    -> 2991     plotter.plot(ax, kwargs)
-       2992     return ax
-       2993 
-    
-
-    ~\Anaconda3\lib\site-packages\seaborn\categorical.py in plot(self, ax, kws)
-       1444     def plot(self, ax, kws):
-       1445         """Make the full plot."""
-    -> 1446         self.draw_swarmplot(ax, kws)
-       1447         self.add_legend_data(ax)
-       1448         self.annotate_axes(ax)
-    
-
-    ~\Anaconda3\lib\site-packages\seaborn\categorical.py in draw_swarmplot(self, ax, kws)
-       1440         for center, swarm in zip(centers, swarms):
-       1441             if swarm.get_offsets().size:
-    -> 1442                 self.swarm_points(ax, swarm, center, width, s, **kws)
-       1443 
-       1444     def plot(self, ax, kws):
-    
-
-    ~\Anaconda3\lib\site-packages\seaborn\categorical.py in swarm_points(self, ax, points, center, width, s, **kws)
-       1349 
-       1350         # Do the beeswarm in point coordinates
-    -> 1351         new_xy = self.beeswarm(orig_xy, d)
-       1352 
-       1353         # Transform the point coordinates back to data coordinates
-    
-
-    ~\Anaconda3\lib\site-packages\seaborn\categorical.py in beeswarm(self, orig_xy, d)
-       1311             # Find the first candidate that does not overlap any neighbours
-       1312             new_xy_i = self.first_non_overlapping_candidate(candidates,
-    -> 1313                                                             neighbors, d)
-       1314 
-       1315             # Place it into the swarm
-    
-
-    ~\Anaconda3\lib\site-packages\seaborn\categorical.py in first_non_overlapping_candidate(self, candidates, neighbors, d)
-       1269             dy = neighbors_y - y_i
-       1270 
-    -> 1271             sq_distances = np.power(dx, 2.0) + np.power(dy, 2.0)
-       1272 
-       1273             # good candidate does not overlap any of neighbors
-    
-
-    KeyboardInterrupt: 
 
 
 
